@@ -1,0 +1,24 @@
+$canvas-width-narrow: 390;
+$canvas-width-wide: 1280;
+
+$breakpoint: 760px;
+
+@function narrow($value) {
+  @if unit($value) == "px" {
+    @return ($value / 1px) / ($canvas-width-narrow / 100) + rem;
+  } @else if unitless($value) {
+    @return $value / ($canvas-width-narrow / 100) + rem;
+  } @else {
+    @error "narrow() expects a px or unitless number, got #{inspect($value)}";
+  }
+}
+
+@function wide($value) {
+  @if unit($value) == "px" {
+    @return ($value / 1px) / ($canvas-width-wide / 100) + rem;
+  } @else if unitless($value) {
+    @return $value / ($canvas-width-wide / 100) + rem;
+  } @else {
+    @error "wide() expects a px or unitless number, got #{inspect($value)}";
+  }
+}

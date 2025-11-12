@@ -1,65 +1,102 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import styles from "./page.module.scss";
 
 export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.tsx file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+        <nav className={styles.nav}>edge to edge and position sticky</nav>
+        <section className={styles.hero}>
+          <h1 className={styles.title}>Scales with Viewport</h1>
+        </section>
+        <section className={styles.carousel}>
+          <div className={styles.model}>
+            <div className={styles.modelThumb}>1</div>
+            <div className={styles.modelDescription}>
+              <div className={styles.modelOverline}>Model</div>
+              <h2 className={styles.modelTitle}>Model</h2>
+              <div className={styles.modelText}>
+                This is a brief description of the lesson to give you a better
+                idea of what to expect.
+              </div>
+            </div>
+          </div>
+          <div className={styles.model}>
+            <div className={styles.modelThumb}>2</div>
+            <div className={styles.modelDescription}>
+              <div className={styles.modelOverline}>Model</div>
+              <h2 className={styles.modelTitle}>Model</h2>
+              <div className={styles.modelText}>
+                This is a brief description of the lesson to give you a better
+                idea of what to expect.
+              </div>
+            </div>
+          </div>
+          <div className={styles.model}>
+            <div className={styles.modelThumb}>3</div>
+            <div className={styles.modelDescription}>
+              <div className={styles.modelOverline}>Model</div>
+              <h2 className={styles.modelTitle}>Model</h2>
+              <div className={styles.modelText}>
+                This is a brief description of the lesson to give you a better
+                idea of what to expect.
+              </div>
+            </div>
+          </div>
+          <div className={styles.model}>
+            <div className={styles.modelThumb}>4</div>
+            <div className={styles.modelDescription}>
+              <div className={styles.modelOverline}>Model</div>
+              <h2 className={styles.modelTitle}>Model</h2>
+              <div className={styles.modelText}>
+                This is a brief description of the lesson to give you a better
+                idea of what to expect.
+              </div>
+            </div>
+          </div>
+          <div className={styles.model}>
+            <div className={styles.modelThumb}>5</div>
+            <div className={styles.modelDescription}>
+              <div className={styles.modelOverline}>Model</div>
+              <h2 className={styles.modelTitle}>Model</h2>
+              <div className={styles.modelText}>
+                This is a brief description of the lesson to give you a better
+                idea of what to expect.
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div className={styles.divider}></div>
+
+        <section className={styles.pitch}>
+          <div className={styles.image}>image</div>
+          <ul className={styles.list}>
+            <li>
+              This a list item that lines up neatly with the other content on
+              the page. It helps give some structure to the page.
+            </li>
+          </ul>
+          <ul className={styles.list}>
+            <li>
+              This a list item that lines up neatly with the other content on
+              the page. It helps give some structure to the page.
+            </li>
+          </ul>
+          <ul className={styles.list}>
+            <li>
+              This a list item that lines up neatly with the other content on
+              the page. It helps give some structure to the page.
+            </li>
+          </ul>
+        </section>
+
+        <div className={styles.divider}></div>
+
+        <div className={styles.gutter}>gutter</div>
+        <div className={styles.gutter}>gutter</div>
+        <div className={styles.inset}>inset</div>
+        <div className={styles.inset}>inset</div>
+        <div className={styles.columnGap}>column gap</div>
       </main>
     </div>
   );
