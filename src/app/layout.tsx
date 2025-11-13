@@ -1,15 +1,22 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.scss";
+import localFont from "next/font/local";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const geograph = localFont({
+  src: [
+    {
+      path: "./font/test-geograph-vf-roman.woff2",
+      style: "normal",
+      weight: "100 900",
+    },
+    {
+      path: "./font/test-geograph-vf-italic.woff2",
+      style: "italic",
+      weight: "100 900",
+    },
+  ],
+  variable: "--font-app",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -24,9 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
-      </body>
+      <body className={`${geograph.variable}`}>{children}</body>
     </html>
   );
 }
