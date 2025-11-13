@@ -10,7 +10,7 @@ import faceD from "../assets/faces/d.svg";
 import faceE from "../assets/faces/e.svg";
 
 const CARD_STATES = ["fourth", "third", "upNext", "onDeck", "swiped"] as const;
-const ROTATION_MS = 1000;
+const ROTATION_MS = 2800;
 
 type CardState = (typeof CARD_STATES)[number];
 
