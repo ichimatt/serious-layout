@@ -38,7 +38,7 @@
   transform-origin: center 400%;
   transform: translate3d(0, 0, 0);
   transition-property: transform, opacity;
-  transition-duration: 640ms;
+  transition-duration: 780ms;
   transition-timing-function: var(--timing-function);
   border-radius: 26px;
   box-shadow: 0 2.175px 16.309px -3.262px rgba(0, 0, 0, 0.08);
