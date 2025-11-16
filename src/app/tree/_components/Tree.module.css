@@ -14,8 +14,9 @@
 }
 
 .tree {
-  font-size: 9px;
+  font-size: 13px;
   position: relative;
+  width: 100vw;
   /* background-color: blueviolet; */
   @media (min-width: 800px) {
     --node-width: 104px;
@@ -39,12 +40,12 @@
   top: 0;
   bottom: 0;
   left: 0;
-  width: var(--node-width);
+  width: calc(var(--node-width) * 1.5);
   /* background-color: cornflowerblue; */
   background-image: linear-gradient(
     to right,
     rgba(255, 255, 255, 100%),
-    rgba(255, 255, 255, 90%) 25%,
+    rgba(255, 255, 255, 90%) 35%,
     rgba(255, 255, 255, 0%)
   );
   z-index: 999;
@@ -144,6 +145,7 @@
   align-items: center;
   justify-content: center;
   animation: node-option-appearance 280ms ease-in;
+  -webkit-tap-highlight-color: transparent;
   /* background-color: var(--background-200); */
   /* border-radius: 100px; */
 }
