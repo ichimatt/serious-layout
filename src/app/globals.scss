@@ -44,10 +44,11 @@ body {
 
 body {
   font-family: var(--font-app), system-ui, sans-serif;
-  font-size: relative-value.narrow(12);
-  @media (min-width: #{relative-value.$breakpoint}) {
-    font-size: relative-value.wide(15);
-  }
+  // font-size: relative-value.narrow(12);
+  // @media (min-width: #{relative-value.$breakpoint}) {
+  //   font-size: relative-value.wide(15);
+  // }
+  font-size: 16px;
   // min-height: 200vh;
   // position: relative;
   height: 100vh;
