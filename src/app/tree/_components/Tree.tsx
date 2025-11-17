@@ -280,31 +280,6 @@ function HandDrawnArrowLeft() {
   );
 }
 
-function HandDrawnSparks() {
-  return (
-    <svg
-      width="48"
-      height="48"
-      viewBox="0 0 48 48"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      stroke="#F2700E"
-      strokeWidth="4"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className={styles.sparks}
-    >
-      <path d="M12.2272 31.5964C11.1824 32.1724 8.82917 33.4497 7.77469 33.9512" />
-      <path d="M22.3953 38.2466C22.2848 39.3816 22.5279 41.9366 22.582 43.4427" />
-      <path d="M33.6738 35.1707C34.2446 35.7232 35.4971 36.9193 35.9406 37.283" />
-      <path d="M9.59375 15.072C10.2294 15.5486 11.622 16.5781 12.1076 16.8833" />
-      <path d="M38.6719 25.7693C39.4657 25.8017 41.1965 25.8606 41.7696 25.8369" />
-      <path d="M22.7461 2.93115C22.8343 4.41285 22.5532 9.18799 22.6155 11.0713" />
-      <path d="M34.452 15.4356C35.0291 15.1604 38.2019 13.1862 38.7984 12.7093" />
-    </svg>
-  );
-}
-
 function HandDrawnFortyTwo() {
   return (
     <svg
