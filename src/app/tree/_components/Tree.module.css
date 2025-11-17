@@ -21,7 +21,6 @@
   @media (min-width: 800px) {
     --node-width: 104px;
     --node-height: 48px;
-    --connection-color: #ebe9e3;
     --connection-stroke: 2px;
     --connection-overflow: 4px;
   }
