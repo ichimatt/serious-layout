@@ -92,7 +92,12 @@ export default function PerspectiveThumb({
           xmlns="http://www.w3.org/2000/svg"
         >
           {circlePositions.map(({ id, cx, cy }) => (
-            <circle key={`static-${id}`} cx={cx} cy={cy} r={diameter / 2} />
+            <circle
+              key={`placeholder-${id}`}
+              cx={cx}
+              cy={cy}
+              r={diameter / 2}
+            />
           ))}
         </svg>
 
@@ -132,7 +137,7 @@ export default function PerspectiveThumb({
             xmlns="http://www.w3.org/2000/svg"
           >
             {circlePositions.map(({ id, cx, cy }) => (
-              <circle key={`static-${id}`} cx={cx} cy={cy} r={diameter / 2} />
+              <circle key={`outline-${id}`} cx={cx} cy={cy} r={diameter / 2} />
             ))}
           </svg>
         </div>
