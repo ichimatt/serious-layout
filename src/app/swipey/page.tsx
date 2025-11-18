@@ -46,7 +46,7 @@ export default function Swipey() {
   }, []);
 
   useEffect(() => {
-    return;
+    // return;
     if (prefersReducedMotion) return;
 
     const intervalId = window.setInterval(() => {
