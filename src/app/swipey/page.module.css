@@ -21,6 +21,7 @@
   width: 58%;
   /* background-color: blueviolet; */
   position: relative;
+  container-type: inline-size;
 }
 
 .card {
@@ -40,13 +41,13 @@
   transition-property: transform, opacity;
   transition-duration: 780ms;
   transition-timing-function: var(--timing-function);
-  border-radius: 26px;
+  border-radius: 10.2cqw;
   box-shadow: 0 2.175px 16.309px -3.262px rgba(0, 0, 0, 0.08);
 }
 
 .avatarWrapper {
-  width: 136px;
-  aspect-ratio: 1/1;
+  width: min(136px, 53.29%);
+  /* aspect-ratio: 1/1; */
   margin: 0 auto;
 }
 
@@ -57,13 +58,14 @@
 }
 
 .score {
-  font-size: 48px;
+  /* font-size: 48px; */
+  font-size: 19cqw;
   letter-spacing: 0.06em;
   font-weight: 766;
 }
 
 .name {
-  font-size: 18px;
+  font-size: 7cqw;
   font-weight: 400;
   /* text-transform: uppercase; */
   /* letter-spacing: 0.08em; */
@@ -76,13 +78,13 @@
 }
 .upNext {
   /* background-color: green; */
-  transform: scale(0.95) translate3d(0, -42px, 0);
+  transform: scale(0.95) translate3d(0, -13%, 0);
   /* opacity: 0.5; */
   z-index: 50;
 }
 .third {
   /* background-color: blue; */
-  transform: scale(0.91) translate3d(0, -79px, 0);
+  transform: scale(0.91) translate3d(0, -24.5%, 0);
   z-index: 25;
 }
 .upNext,
