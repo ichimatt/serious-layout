@@ -1,4 +1,4 @@
-@use "./_relative-value.scss" as relative-value;
+@use "../_relative-value.scss" as relative-value;
 
 :root {
   --gutter-narrow: #{relative-value.narrow(40px)};

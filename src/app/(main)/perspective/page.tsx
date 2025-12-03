@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import PerspectiveThumb from "../_components/PerspectiveThumb/PerspectiveThumb";
+import PerspectiveThumb from "../../_components/PerspectiveThumb/PerspectiveThumb";
 
 export const metadata: Metadata = {
   title: "Perspective",

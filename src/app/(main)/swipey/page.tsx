@@ -3,11 +3,11 @@
 import Image, { type StaticImageData } from "next/image";
 import { useEffect, useMemo, useState } from "react";
 import styles from "./page.module.css";
-import faceA from "../assets/faces/a.svg";
-import faceB from "../assets/faces/b.svg";
-import faceC from "../assets/faces/c.svg";
-import faceD from "../assets/faces/d.svg";
-import faceE from "../assets/faces/e.svg";
+import faceA from "../../assets/faces/a.svg";
+import faceB from "../../assets/faces/b.svg";
+import faceC from "../../assets/faces/c.svg";
+import faceD from "../../assets/faces/d.svg";
+import faceE from "../../assets/faces/e.svg";
 
 const CARD_STATES = ["fourth", "third", "upNext", "onDeck", "swiped"] as const;
 const ROTATION_MS = 2800;
