@@ -7,9 +7,11 @@ export default function GamePage() {
         <div className={styles.chunk}></div>
       </nav>
       <section className={styles.area}>
+        <div className={styles.layoutAncor}></div>
         <div className={styles.chunk}></div>
         <div className={styles.chunk}></div>
         <div className={styles.chunk}></div>
+        <div className={styles.layoutAncor}></div>
       </section>
       <section className={styles.controls}>
         <div className={styles.chunk}></div>

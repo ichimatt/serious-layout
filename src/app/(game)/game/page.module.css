@@ -19,7 +19,7 @@
   padding: 44px;
   min-height: 0px;
   overflow: auto;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .chunk {
   background-color: blueviolet;
